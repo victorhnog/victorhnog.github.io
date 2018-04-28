@@ -19,7 +19,7 @@ $(document).ready(function(){
 
     // Today and clear
     today: 'hoy',
-    clear: 'Limpio',
+    clear: 'Borrar',
     close: 'OK',
 
     selectMonths: true, // Creates a dropdown to control month
@@ -32,7 +32,7 @@ $(document).ready(function(){
     fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
     twelvehour: false, // Use AM/PM or 24-hour format
     donetext: 'OK', // text for done-button
-    cleartext: 'Limpio', // text for clear-button
+    cleartext: 'Borrar', // text for clear-button
     canceltext: 'Cancelar', // Text for cancel-button,
     container: undefined, // ex. 'body' will append picker to body
     autoclose: false, // automatic close timepicker

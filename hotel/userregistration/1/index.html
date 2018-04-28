@@ -9,6 +9,7 @@
     <script src="../js/jquery-3.2.1.js"></script>
     <script src="../js/materialize.js"></script>
     <script src="../js/general.js"></script>
+    <script src="../js/changeRegister.js"></script>
   </head>
   <body class="white">
     <nav>
@@ -32,22 +33,22 @@
         <form class="col s12 m12 l12" method="post">
           <div class="row">
             <div class="input-field col s5 offset-m1">
-              <input id="usuarioName" type="text" class="validate" data-length="60" maxlength="60" required/>
+              <input id="usuarioName" type="text" class="validate" data-length="60" maxlength="60" value="Kate Chamberlain Jackson" required/>
               <label data-error="nombre inválido" class="" for="usuarioName">Nombre</label>
             </div>
             <div class="input-field col s5">
-              <input id="usuarioNickName" type="text" class="validate" data-length="60" maxlength="60"/>
+              <input id="usuarioNickName" type="text" class="validate" data-length="60" maxlength="60" value="Kate"/>
               <label data-error="Apellido inválido" class="" for="usuarioNickName">Apellido</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s5 offset-m1">
-              <input id="usuarioTel" type="tel" class="validate" data-length="20" maxlength="20"/>
+              <input id="usuarioTel" type="tel" class="validate" data-length="20" maxlength="20" value="(99)99999-9999"/>
               <label data-error="Telefono inválido" class="" for="usuarioTel">Telefono</label>
             </div>
             <div class="input-field col s5">
-              <input id="usuarioEmail" type="email" class="validate" data-length="60" maxlength="60"/>
+              <input id="usuarioEmail" type="email" class="validate" data-length="60" maxlength="60" value="kate_123@email.com"/>
               <label data-error="Correo Electronico inválido" class="" for="usuarioEmail">Correo Electronico</label>
             </div>
           </div>
@@ -65,7 +66,7 @@
 
           <div class="row">
             <div class="input-field col s5 offset-m1">
-              <input id="usuarioNumNights" type="number" class="validate" min="0" max="999" value="1"/>
+              <input id="usuarioNumNights" type="number" class="validate" min="0" max="999" value="4"/>
               <label data-error="Numero de Noches inválido" class="" for="usuarioTel">Numero de Noches</label>
             </div>
             <div class="input-field col s5">
@@ -76,11 +77,11 @@
 
           <div class="row">
             <div class="col s5 offset-m1 input-field">
-              <input id="usuarioHour" type="text" class="timepicker">
-              <label for="usuarioHour">Hora de Llegada</label>
+              <input id="usuarioHour" type="time" class="" value="18:00">
+              <label for="usuarioHour" class="active">Hora de Llegada</label>
             </div>
             <div class="col s5 input-field">
-              <input id="usuarioFee" type="number" class="">
+              <input id="usuarioFee" type="number" class="" value="7.50">
               <label for="usuarioFee">Tarifa</label>
             </div>
           </div>
@@ -119,7 +120,7 @@
 
           <div class="row">
             <div class="input-field col s5 offset-m1">
-              <input id="usuarioRequestedBy" type="text" class="validate"/>
+              <input id="usuarioRequestedBy" type="text" class="validate" value="Kate"/>
               <label data-error="Hecha por inválido" class="" for="usuarioRequestedBy">Hecha por</label>
             </div>
             <div class="input-field col s5">
@@ -152,7 +153,7 @@
 
           <div class="row">
             <div class="col offset-m1">
-              <button class="btn green" type="submit" name="button">Hacer reservacion</button>
+              <button class="btn green" type="submit" name="button">Cambiar datos</button>
             </div>
           </div>
         </form>
