@@ -9,6 +9,7 @@
     <script src="../js/jquery-3.2.1.js"></script>
     <script src="../js/materialize.js"></script>
     <script src="../js/general.js"></script>
+    <script src="../js/userregistration.js"></script>
   </head>
   <body class="white">
     <nav>
@@ -29,7 +30,7 @@
         <div class="row">
           <h1 class="col offset-m1">Hacer nueva reservacion</h1>
         </div>
-        <form class="col s12 m12 l12" method="post">
+        <form id="formNewRegistration" class="col s12 m12 l12" method="post">
           <div class="row">
             <div class="input-field col s5 offset-m1">
               <input id="usuarioName" type="text" class="validate" data-length="60" maxlength="60" required/>
@@ -69,8 +70,8 @@
               <label data-error="Numero de Noches inválido" class="" for="usuarioTel">Numero de Noches</label>
             </div>
             <div class="input-field col s5">
-              <input id="usuarioNumPeople" type="number" class="validate" min="1" max="20" value="1"/>
-              <label data-error="Numero de Personas inválido" class="" for="usuarioEmail">Numero de Personas</label>
+              <input id="usuarioNumPersons" type="number" class="validate" min="1" max="20" value="1"/>
+              <label data-error="Numero de Personas inválido" class="" for="usuarioNumPersons">Numero de Personas</label>
             </div>
           </div>
 
@@ -80,14 +81,14 @@
               <label for="usuarioHour">Hora de Llegada</label>
             </div>
             <div class="col s5 input-field">
-              <input id="usuarioFee" type="number" class="">
-              <label for="usuarioFee">Tarifa</label>
+              <input id="usuarioRate" type="text" class="">
+              <label for="usuarioRate">Tarifa</label>
             </div>
           </div>
 
           <div class="row">
             <div class="input-field col s5 offset-m1">
-              <select>
+              <select id="usuarioFormOfPayment">
                 <option value="" disabled selected>Elegir una opción</option>
                 <option value="efectivo">efectivo</option>
                 <option value="deposito">depósito</option>
@@ -95,7 +96,7 @@
               <label>Forma de pago</label>
             </div>
             <div class="input-field col s5">
-              <select>
+              <select multiple id="usuarioRoomNumber">
                 <option value="" disabled selected>Elegir una opción</option>
                 <option value="1">habitacion 1</option>
                 <option value="2">habitacion 2</option>
@@ -119,14 +120,14 @@
 
           <div class="row">
             <div class="input-field col s5 offset-m1">
-              <input id="usuarioRequestedBy" type="text" class="validate"/>
-              <label data-error="Hecha por inválido" class="" for="usuarioRequestedBy">Hecha por</label>
+              <input id="usuarioMadeBy" type="text" class="validate"/>
+              <label data-error="Hecha por inválido" class="" for="usuarioMadeBy">Hecha por</label>
             </div>
             <div class="input-field col s5">
-              <select>
+              <select id="usuarioStatus">
                 <option value="" disabled selected>Elegir una opción</option>
-                <option value="efectivo">sí</option>
-                <option value="deposito">no</option>
+                <option value="1">sí</option>
+                <option value="0">no</option>
               </select>
               <label>Estado de confirmacion</label>
             </div>

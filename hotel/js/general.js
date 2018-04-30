@@ -3,6 +3,7 @@ $(document).ready(function(){
     // The title label to use for the month nav buttons
     labelMonthNext: 'Mes siguiente',
     labelMonthPrev: 'Mes pasado',
+    format: 'yyyy-mm-dd',
 
     // The title label to use for the dropdown selectors
     labelMonthSelect: 'Seleccione un mes',
